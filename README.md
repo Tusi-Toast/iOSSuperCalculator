@@ -51,23 +51,33 @@ open SuperCalculator.xcodeproj
 
 ### 4. 打包 IPA 文件
 
-在桌面创建 build_ipa.sh 脚本，内容如下：
+在桌面创建 `build_ipa.sh` 脚本，内容如下：
 
+```bash
 #!/bin/bash
 cd /Users/macbook/Desktop/SuperCalculator
+
 xcodebuild -project SuperCalculator.xcodeproj -scheme SuperCalculator -configuration Release -sdk iphoneos build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+
 APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "*.app" -path "*/Release-iphoneos/*" 2>/dev/null | head -1)
+
 cd ~/Desktop
 rm -rf Payload
 mkdir -p Payload
 cp -R "$APP_PATH" Payload/
 zip -r SuperCalculator.ipa Payload/
 rm -rf Payload
+
 echo "✅ IPA 已生成: ~/Desktop/SuperCalculator.ipa"
+```
 
 执行打包：
+
+```bash
 chmod +x ~/Desktop/build_ipa.sh
 ~/Desktop/build_ipa.sh
+```
+
 
 ### 5. 安装到 iPhone
 - 使用爱思助手：拖拽 IPA 到应用安装区域
