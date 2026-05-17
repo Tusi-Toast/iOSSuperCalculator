@@ -38,6 +38,8 @@
 ## 🔧 安装与编译
 
 ### 1. 克隆项目
+```bash
+#!/bin/bash
 git clone https://github.com/Tusi-Toast/iOSSuperCalculator.git
 cd iOSSuperCalculator
 
