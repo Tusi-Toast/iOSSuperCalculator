@@ -39,9 +39,9 @@
 
 ### 1. 克隆项目
 ```bash
-#!/bin/bash
 git clone https://github.com/Tusi-Toast/iOSSuperCalculator.git
 cd iOSSuperCalculator
+```
 
 ### 2. 用 Xcode 打开
 open SuperCalculator.xcodeproj
