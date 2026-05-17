@@ -30,22 +30,16 @@
 - ✅ 大屏机型自动显示科学按钮
 - ✅ 横屏适配
 
-## 📷 截图
-
-| 主界面 | 设置界面 | 关于界面 |
-|--------|----------|----------|
-| (待添加) | (待添加) | (待添加) |
 
 ## 📋 系统要求
 
 - iOS 12.0+
-- Xcode 10.1+
-- iPhone / iPad
+- iPhone
 
 ## 🔧 安装与编译
 
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/你的用户名/SuperCalculator.git
-cd SuperCalculator
+git clone https://github.com/Tusi-Toast/iOSSuperCalculator.git
+cd iOSSuperCalculator
